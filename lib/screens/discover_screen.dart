@@ -89,6 +89,11 @@ class DiscoverScreen extends StatelessWidget {
                 );
               }).toList(),
             ),
+            Container(
+                margin: const EdgeInsets.only(top: 50),
+                child: const Text("My Pokemon",
+                    style:
+                        TextStyle(fontSize: 24, fontWeight: FontWeight.w500))),
           ],
         ),
       )),
