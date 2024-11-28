@@ -1,5 +1,8 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:my_pokedex_app/data/elements.dart';
+import 'package:my_pokedex_app/data/pokemon.dart';
 
 class DiscoverScreen extends StatelessWidget {
   const DiscoverScreen({super.key});
@@ -10,9 +13,8 @@ class DiscoverScreen extends StatelessWidget {
       backgroundColor: const Color(0xffECE6F0),
       body: SingleChildScrollView(
           child: Container(
-        margin: const EdgeInsets.symmetric(
-          horizontal: 24,
-        ),
+        margin: const EdgeInsets.only(right: 24, left: 24, bottom: 50),
+        // margin: const EdgeInsets.symmetric(horizontal: 24, vertical: 30),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -94,6 +96,43 @@ class DiscoverScreen extends StatelessWidget {
                 child: const Text("My Pokemon",
                     style:
                         TextStyle(fontSize: 24, fontWeight: FontWeight.w500))),
+            GridView.count(
+              crossAxisCount: 2,
+              crossAxisSpacing: 10,
+              mainAxisSpacing: 10,
+              childAspectRatio: 1.5,
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              children: pokemonList.map((data) {
+                return ClipRRect(
+                  borderRadius: BorderRadius.circular(17),
+                  child: Container(
+                    padding: const EdgeInsets.only(left: 10),
+                    color: data.type.typeColor,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          data.name,
+                          style: const TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                              overflow: TextOverflow.ellipsis),
+                        ),
+                        Expanded(
+                          child: Image.asset(
+                            data.image,
+                            width: 80,
+                            height: 80,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              }).toList(),
+            ),
           ],
         ),
       )),
