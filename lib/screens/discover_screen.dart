@@ -57,7 +57,7 @@ class DiscoverScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Text(
-                          data.name,
+                          '${data.name} type',
                           style: const TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
