@@ -1,8 +1,7 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:my_pokedex_app/data/elements.dart';
 import 'package:my_pokedex_app/data/pokemon.dart';
+import 'package:my_pokedex_app/screens/detail_screen.dart';
 
 class DiscoverScreen extends StatelessWidget {
   const DiscoverScreen({super.key});
@@ -104,30 +103,38 @@ class DiscoverScreen extends StatelessWidget {
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
               children: pokemonList.map((data) {
-                return ClipRRect(
-                  borderRadius: BorderRadius.circular(17),
-                  child: Container(
-                    padding: const EdgeInsets.only(left: 10),
-                    color: data.type.typeColor,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          data.name,
-                          style: const TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
-                              overflow: TextOverflow.ellipsis),
-                        ),
-                        Expanded(
-                          child: Image.asset(
-                            data.image,
-                            width: 80,
-                            height: 80,
+                return InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const DetailScreen()));
+                  },
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(17),
+                    child: Container(
+                      padding: const EdgeInsets.only(left: 10),
+                      color: data.type.typeColor,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            data.name,
+                            style: const TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                                overflow: TextOverflow.ellipsis),
                           ),
-                        ),
-                      ],
+                          Expanded(
+                            child: Image.asset(
+                              data.image,
+                              width: 80,
+                              height: 80,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 );
