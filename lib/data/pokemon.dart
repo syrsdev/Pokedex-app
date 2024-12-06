@@ -4,15 +4,6 @@ import 'package:flutter/material.dart';
 
 final List<Pokemon> pokemonList = [
   Pokemon(
-    name: "bulbasaur",
-    description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    type: TypePokemon(name: "Grass", typeColor: const Color(0xff6FC506)),
-    weight: 6.9,
-    height: 0.7,
-    image: "assets/images/bulbasaur.png",
-  ),
-  Pokemon(
     name: "venusaur",
     description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -40,75 +31,30 @@ final List<Pokemon> pokemonList = [
     image: "assets/images/bulbasaur.png",
   ),
   Pokemon(
-    name: "bulbasaur",
+    name: "wartortle",
     description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    type: TypePokemon(name: "Grass", typeColor: const Color(0xff6FC506)),
+    type: TypePokemon(name: "Water", typeColor: const Color(0xff009DCD)),
     weight: 6.9,
     height: 0.7,
-    image: "assets/images/bulbasaur.png",
+    image: "assets/images/wartortle.png",
   ),
   Pokemon(
-    name: "bulbasaur",
+    name: "blaistoise",
     description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    type: TypePokemon(name: "Grass", typeColor: const Color(0xff6FC506)),
+    type: TypePokemon(name: "Water", typeColor: const Color(0xff009DCD)),
     weight: 6.9,
     height: 0.7,
-    image: "assets/images/bulbasaur.png",
+    image: "assets/images/blaistois.png",
   ),
   Pokemon(
-    name: "bulbasaur",
+    name: "charmeleon",
     description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    type: TypePokemon(name: "Grass", typeColor: const Color(0xff6FC506)),
+    type: TypePokemon(name: "Fire", typeColor: const Color(0xffB72626)),
     weight: 6.9,
     height: 0.7,
-    image: "assets/images/bulbasaur.png",
-  ),
-  Pokemon(
-    name: "bulbasaur",
-    description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    type: TypePokemon(name: "Grass", typeColor: const Color(0xff6FC506)),
-    weight: 6.9,
-    height: 0.7,
-    image: "assets/images/bulbasaur.png",
-  ),
-  Pokemon(
-    name: "bulbasaur",
-    description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    type: TypePokemon(name: "Grass", typeColor: const Color(0xff6FC506)),
-    weight: 6.9,
-    height: 0.7,
-    image: "assets/images/bulbasaur.png",
-  ),
-  Pokemon(
-    name: "bulbasaur",
-    description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    type: TypePokemon(name: "Grass", typeColor: const Color(0xff6FC506)),
-    weight: 6.9,
-    height: 0.7,
-    image: "assets/images/bulbasaur.png",
-  ),
-  Pokemon(
-    name: "bulbasaur",
-    description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    type: TypePokemon(name: "Grass", typeColor: const Color(0xff6FC506)),
-    weight: 6.9,
-    height: 0.7,
-    image: "assets/images/bulbasaur.png",
-  ),
-  Pokemon(
-    name: "bulbasaur",
-    description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    type: TypePokemon(name: "Grass", typeColor: const Color(0xff6FC506)),
-    weight: 6.9,
-    height: 0.7,
-    image: "assets/images/bulbasaur.png",
+    image: "assets/images/charmeleon.png",
   ),
 ];
