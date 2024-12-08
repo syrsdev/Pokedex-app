@@ -66,7 +66,7 @@ class DiscoverScreen extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
-                          width: 73,
+                          width: 10,
                           height: 73,
                           child: Stack(
                             alignment: Alignment.topRight,
@@ -108,7 +108,9 @@ class DiscoverScreen extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const DetailScreen()));
+                            builder: (context) => DetailScreen(
+                                  pokemon: data,
+                                )));
                   },
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(17),
